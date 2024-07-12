@@ -15,7 +15,7 @@ def compute_jsd(f1: np.array, f2: np.array) -> float:
     - f2: Second input array  of feature.
     
     Returns:
-    - Adjusted Jensen-Shannon Divergence (1 - JSD) between KDEs of f1 and f2.
+    -  Jensen-Shannon Divergence (JSD) between KDEs of f1 and f2.
     """
     # Remove NaNs and Infs
     f1_clean = f1[np.isfinite(f1)]
